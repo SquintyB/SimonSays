@@ -6,6 +6,7 @@ let firstPress = true;
 let level = 0;
 let buttons = document.querySelectorAll(".btn");
 document.addEventListener("keypress", isFirstPress);
+document.getElementById("level-title").addEventListener("click", isFirstPress);
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", (event) => {
